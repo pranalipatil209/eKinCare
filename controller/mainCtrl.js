@@ -1,5 +1,11 @@
 angular.module("myApp")
-    .controller("mainCtrl", function($scope, $http) {
+    .controller("mainCtrl", function($scope, $http, authService,$rootScope) {
+        authService.skipIfLoggedIn();
+        $rootScope.logout = function(){
+            window.onpopstate = function (e) { window.history.forward(1); }
+            authService.logout();
+        };
+
       // var data=
         // var config = {
         //     headers: {
