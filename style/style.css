@@ -1,0 +1,29 @@
+body{
+    background-color: #D2EDF0;
+    padding-top: 0.5px;
+}
+.grad{
+    width : 100vw;
+    height: 100%;
+    background: #FFFFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #FFFFFF, #687387); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #FFFFFF, #687387); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #FFFFFF, #687387); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #FFFFFF, #687387); /* Standard syntax (must be last) */
+}
+md-toolbar{
+    background-color: #415C8A;
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input{
+    border-color: #415C8A;
+    color : #415C8A;
+}
+/*md-input-container > label{*/
+    /*color : #415C8A;*/
+/*}*/
+#md-button{
+    background-color: #415C8A;
+}
+md-nav-bar > md-nav-item{
+    color: #F2B197;
+}

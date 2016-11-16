@@ -1,6 +1,6 @@
 angular.module("myApp")
     .controller("mainCtrl", function($scope, $http, authService,$rootScope) {
-        authService.skipIfLoggedIn();
+        // authService.skipIfLoggedIn();
         $rootScope.logout = function(){
             window.onpopstate = function (e) { window.history.forward(1); }
             authService.logout();
